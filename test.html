@@ -1,0 +1,22 @@
+<!doctype HTML>
+<html>
+<head>
+    <title>Xephyr 2022</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0px; overflow: hidden;">
+
+    <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
+    <a-marker preset="custom" type="pattern" url="zephyr.patt">
+        <a-text value="Zephyr 2022" align="center" position="0 0.2 1" rotation="-90 0 0" color="#FF0000">
+        </a-text>
+        <a-image src="zephyr.png" width="1" position="0 0.2 0" height="1" align="center" rotation="-90 0 0"></a-image>
+    </a-marker>
+
+    <!-- define a camera which will move according to the marker position -->
+    <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
