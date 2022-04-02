@@ -31,7 +31,8 @@
       </a-assets>
 
       <a-marker
-        preset="hiro"
+        preset="custom"
+        type="pattern" url="zephyr.patt"
         raycaster="objects: .clickable"
         emitevents="true"
         cursor="fuse: false; rayOrigin: mouse;"
@@ -41,7 +42,7 @@
           id="bowser-model"
           gltf-model="#bowser"
           position="0 0 0"
-          rotation="0 -90 0"
+          rotation="0 -180 0"
           scale="0.05 0.05 0.05"
           class="clickable"
           gesture-handler
