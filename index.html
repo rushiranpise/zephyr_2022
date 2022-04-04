@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zephyr 2022</title>
+    <title>Codeathon 2022</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="styles.css">
@@ -14,12 +14,12 @@
     <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
       <a-assets>
         <a-asset-item id="one" src="one.glb"></a-asset-item>
-        <a-asset-item id="two" src="two.glb"></a-asset-item>
+        <a-asset-item id="codeathon" src="codeathon.glb"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro" url="zephyr.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
         <a-entity id="bowser-model" gltf-model="#one" position="0 0 0" rotation="0 -270 0" scale="0.05 0.05 0.05" class="clickable" gesture-handler></a-entity>
       </a-marker>
-      <a-marker preset="custom" type="pattern" url="two.patt" " raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerB">
+      <a-marker preset="custom" type="pattern" url="codeathon.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerB">
         <a-entity id="bowser-model" gltf-model="#two" position="0 0 0" rotation="0 -270 0" scale="0.05 0.05 0.05" class="clickable" gesture-handler></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
